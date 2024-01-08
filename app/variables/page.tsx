@@ -5,7 +5,7 @@ export default function VariablesPage() {
       {Object.entries(process.env)
         .map(([key, value]) => (
           <div key={key}>
-            <span className="pe-4">{key}</span>
+            <span className="pe-4">{key}{" "}</span>
             <span>{value}</span>
           </div>
         ))}
